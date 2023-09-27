@@ -1,4 +1,4 @@
-let nilai = 9
+// let nilai = 9
 
 //bisa tanpa kurung kurawal, jika isi di dalam if sebaris
 // if (nilai > 8) alert('Predikat : A')
@@ -89,3 +89,87 @@ let nilai = 9
 // }
 
 // fungsi2()
+
+// Arrow function
+// let arrowFunction = () => alert('Ini adalah arrow function')
+
+// arrowFunction()
+// Arrow function dengan parameter
+// let luasPersegiPanjang = (panjang, lebar = 2) => alert(panjang * lebar)
+// luasPersegiPanjang(6)
+
+// jika hanya 1 parameter, maka boleh tidak menggunakan kurung
+// let luasPersegi = sisi => alert(sisi * sisi)
+// luasPersegi(5)
+
+// multi line arrow function
+// let luasPersegi = sisi => {
+//     let hasil = sisi * sisi
+//     alert(hasil)
+// }
+// luasPersegi(15)
+
+
+// TEST debugging menggunakan console.log
+// let text = 'Hello World'
+
+// function changeText() {
+//     text = 'Halo Dunia'
+//     changeText2()
+//     alert(text)
+// }
+
+// let changeText2 = function() {
+//     text = 'Halo-halo coders'
+//     return
+//     changeText3()
+// }
+
+// let changeText3 = () => text = 'Halo semua!'
+
+// changeText()
+
+
+// OBJECT
+// let nama = 'reza'
+// let umur = 23
+
+// let user = {
+//     nama,
+//     umur,
+//     sayHello() {
+//         alert('Halo dunia!')
+//     }
+// }
+// user.jenis_kelamin = 'Laki-laki'    //tambah properti objek
+// delete user.jenis_kelamin           //hapus properti objek
+
+
+// duplikat object
+// cara 1
+// let user2 = {}
+// Object.assign(user2, user)
+
+// cara 2
+// let user2 = user                        //mereference object
+// let user2 = Object.assign({}, user)     //mengcopy object
+
+
+// user2.nama = 'Toni'
+// user2.umur = 11
+
+// alert(user.nama)
+// alert(user.umur)
+// alert(user2.nama)
+// alert(user2.umur)
+
+
+
+// Keyword this
+// let user = {
+//     firstName : 'Reza',
+//     lastName : 'Alfara',
+//     getFullName : () => user.firstName + ' ' + user.lastName
+// }
+
+// console.log(user.getFullName())
